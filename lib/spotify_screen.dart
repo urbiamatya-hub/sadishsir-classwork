@@ -58,45 +58,135 @@ class _SpotifyScreenState extends State<SpotifyScreen> {
                   SizedBox(height: 8),
                   Text(
                     'Dominic Fike',
-                    style: TextStyle(color: Colors.white, fontSize: 16),
+                    style: TextStyle(color: Colors.white,
+                        fontSize: 16),
                   ),
                 ],
               ),
             ],
           ),
-              Padding(
-              padding: EdgeInsets.all(16),
-              child: Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(4),
-                    child: Image.asset(
-                      'assets/images/pic.JPG',
-                      width: 80,
-                      height: 80,
-                      fit: BoxFit.cover,
+          Row(
+            children: [
+              SizedBox(width: 16),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(4),
+                child: Image.asset(
+                  'assets/images/sp.jpeg',
+                  width: 80,
+                  height: 80,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "#SPOTIFYWRAPPED",
+                      style: TextStyle(color: Colors.white, fontSize: 12),
                     ),
-                  ),
-                  SizedBox(width: 12),
-                  Expanded(
-          child: Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
-    Text(
-    '#SPOTIFYWRAPPED',
-    style: TextStyle(color: Colors.grey, fontSize: 12),
-    ),
-    SizedBox(height: 4),
-    Text(
-    'Your 2026 in review',
-    style: TextStyle(
-    color: Colors.white,
-    fontSize: 24,
-    fontWeight: FontWeight.bold,
+                    SizedBox(height: 4),
+                    Text(
+                      'Your 2026 in review',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],
                 ),
+              ),
+            ],
+          ),
+          Column(
+            spacing: 16,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Column(
+                    spacing: 8,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        'assets/images/topsongs.jpeg',
+                        width: 160,
+                        height: 160,
+                        fit: BoxFit.cover,
+                      ),
+                      Text(
+                        'Your Top Songs 2026',
+                        style: TextStyle(color: Colors.white, fontSize: 14),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    spacing: 8,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        'assets/images/artistrevealed.jpeg',
+                        width: 160,
+                        height: 160,
+                        fit: BoxFit.cover,
+                      ),
+                      Text(
+                        'Your Artists Revealed',
+                        style: TextStyle(color: Colors.white, fontSize: 14),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              Text(
+                "Editor's picks",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Column(
+                    spacing: 8,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        'assets/images/editor.jpeg',
+                        width: 160,
+                        height: 160,
+                        fit: BoxFit.cover,
+                      ),
+                      Text(
+                        'Gracie Abrams,Kehlani ,\nWeeknd, Malcomn Todd',
+                        style: TextStyle(color: Colors.white, fontSize: 14),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    spacing: 8,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        'assets/images/editors2.jpeg',
+                        width: 160,
+                        height: 160,
+                        fit: BoxFit.cover,
+                      ),
+                      Text(
+                        'Jennie, Tame Impala,\n Olivia Rodrigo, Charli XCX',
+                        style: TextStyle(color: Colors.white, fontSize: 14),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ],
           ),
